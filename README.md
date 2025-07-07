@@ -1,8 +1,10 @@
 # Ability System Tech Test
 
 The project is located on the **`develop` branch**.
-
 Unity version is **6000.0.40f1**
+
+## Development Time
+The test task was completed in approximately **9 hours**.
 
 ## How to Run
 1. Open the scene located at `Assets/Scenes/AbilitySystemTest.unity`.
