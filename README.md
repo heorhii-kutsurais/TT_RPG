@@ -1,6 +1,7 @@
 # Ability System Tech Test
 
 The project is located on the **`develop` branch**.
+Project version is **6000.0.40f1**
 
 ## How to Run
 1. Open the scene located at `Assets/Scenes/AbilitySystemTest.unity`.
