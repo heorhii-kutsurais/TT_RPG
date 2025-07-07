@@ -63,6 +63,10 @@ namespace HealthModule
 
         public void TakeDamage(float amount)
         {
+            if (_isDead)
+            {
+                return;
+            }
             _simpleHealthBar.Activate();
 
             if (amount < 0)
