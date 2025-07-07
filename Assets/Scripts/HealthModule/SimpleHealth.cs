@@ -10,6 +10,9 @@ namespace HealthModule
         [SerializeField]
         private float _max;
 
+        [SerializeField]
+        private float _startHealth;
+
         private bool _isDead;
         private float _current;
 
@@ -19,10 +22,37 @@ namespace HealthModule
         {
             _isDead = false;
 
-            _current = _max;
+            _current = _startHealth;
             UpdateHealth(_current, _max);
 
-            _simpleHealthBar.Deactivate();
+            if (_current < _max)
+            {
+                _simpleHealthBar.Activate();
+            }
+            else
+            {
+                _simpleHealthBar.Deactivate();
+            }
+        }
+
+        public void TakeHeal(float amount)
+        {
+            if (_isDead)
+            {
+                return;
+            }
+
+            _simpleHealthBar.Activate();
+
+            if (amount < 0)
+            {
+                Debug.LogError("Negative heal");
+                amount = Mathf.Abs(amount);
+            }
+
+
+            _current += amount;
+            UpdateHealth(_current, _max);
         }
 
         public void TakeDamage(float amount)

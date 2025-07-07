@@ -151,6 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8154227049163950737}
   - component: {fileID: 7967994670496219015}
+  - component: {fileID: 3489183051332992644}
   - component: {fileID: 9162043948653419290}
   - component: {fileID: 1869587799376359154}
   m_Layer: 0
@@ -190,6 +191,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _alignment: 3
   _simpleHealth: {fileID: 9162043948653419290}
+--- !u!114 &3489183051332992644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262675603311983296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edae3ff95dbef24b8bd6c0774b1700e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &9162043948653419290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _simpleHealthBar: {fileID: 1718593244607861099}
-  _max: 50
+  _max: 75
+  _startHealth: 75
 --- !u!65 &1869587799376359154
 BoxCollider:
   m_ObjectHideFlags: 0

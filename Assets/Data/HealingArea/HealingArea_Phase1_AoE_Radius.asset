@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff3ada06f2330243b04f31a7c849cec, type: 3}
-  m_Name: QuickSlash_AbilityBehaviour
+  m_Script: {fileID: 11500000, guid: 98db2702947ec3945aa61f42f7efd7ce, type: 3}
+  m_Name: HealingArea_Phase1_AoE_Radius
   m_EditorClassIdentifier: 
-  _abilityPhases:
-  - {fileID: 11400000, guid: d8e61bb482cf2fd409b841032db4ac4a, type: 2}
+  _value: 3

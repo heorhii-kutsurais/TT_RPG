@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1de3c2c43bd3ae47832a6c17ba1f569, type: 3}
-  m_Name: CircularSlash_Ability
+  m_Name: CircularSlash
   m_EditorClassIdentifier: 
   _cooldown: {fileID: 11400000, guid: 3a6ce1e9916e96c458d8c8c9251732ce, type: 2}
   _abilityBehaviour: {fileID: 11400000, guid: 1899300cec40988448476fd2634a5b19, type: 2}

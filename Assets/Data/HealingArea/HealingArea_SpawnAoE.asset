@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1bbb0b3f323f8498f25084c3a1c671, type: 3}
+  m_Name: HealingArea_SpawnAoE
+  m_EditorClassIdentifier: 
+  _aoePrefab: {fileID: -8741333733638551154, guid: 26d5c3a364bf77644b358e09333fc72b, type: 3}
+  _duration: {fileID: 11400000, guid: c566acfb15a55854587edb2b07bac6f3, type: 2}
+  _tickInterval: {fileID: 11400000, guid: 2aac5152b3abad140bfbee419bf443c3, type: 2}
+  _radius: {fileID: 11400000, guid: 78e2bcad7fa7ade4a8f7b86e000179a3, type: 2}
+  _enterConsequences:
+  - {fileID: 11400000, guid: a49009aba86b09347b7ac7e487e23dfd, type: 2}
+  _exitConsequences:
+  - {fileID: 11400000, guid: bb7b438d651ac2b45ab700fba80dafbf, type: 2}

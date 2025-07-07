@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4532c01f40263f846be3953c1929ffd7, type: 3}
+  m_Name: Embers_AoE_AddBurnStatus
+  m_EditorClassIdentifier: 
+  _guid:
+    serializedGuid: 96b43d48-8464-4109-ab02-720a0e190488
+  _duration: {fileID: 11400000, guid: 013c0db325c76444da1b9c95a9e44906, type: 2}
+  _tickInterval: {fileID: 11400000, guid: f4fb196de0fd9c94aadc32dd9700fe32, type: 2}
+  _damagePerTick: {fileID: 11400000, guid: 5dadfa5b120659d4e9d2705253fd3490, type: 2}

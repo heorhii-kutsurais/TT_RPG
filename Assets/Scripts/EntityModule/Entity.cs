@@ -1,4 +1,5 @@
 ﻿using AbilityModule;
+using AbilityModule.StatusModule;
 using HealthModule;
 using UnityEngine;
 
@@ -19,6 +20,27 @@ namespace EntityModule
 
         private Transform _transform;
 
+        public void ApplyStatus(Status status)
+        {
+            foreach (var item in _entityComponents)
+            {
+                item.ApplyStatus(status);
+            }
+        }
+
+        public void RemoveStatus(string guid)
+        {
+            foreach (var item in _entityComponents)
+            {
+                item.RemoveStatus(guid);
+            }
+        }
+
+        public void TakeHeal(float value)
+        {
+            _simpleHealth.TakeHeal(value);
+        }
+
         public void TakeDamage(float value)
         {
             _simpleHealth.TakeDamage(value);
@@ -30,6 +52,11 @@ namespace EntityModule
 
             _entityComponents = GetComponentsInChildren<EntityComponent>();
 
+            foreach (var item in _entityComponents)
+            {
+                item.Initialize(this);
+            }
+
             _simpleHealth.Initialize();
             _simpleHealth.OnDeath -= SimpleHealth_OnDeath;
             _simpleHealth.OnDeath += SimpleHealth_OnDeath;
@@ -39,7 +66,8 @@ namespace EntityModule
         {
             foreach (var item in _entityComponents)
             {
-                item.UpdateLogic();
+                var deltaTime = Time.deltaTime;
+                item.UpdateLogic(deltaTime);
             }
         }
 

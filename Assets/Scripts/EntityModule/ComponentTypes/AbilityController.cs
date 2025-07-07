@@ -41,7 +41,7 @@ namespace EntityModule.ComponentTypes
             }
         }
 
-        public override void UpdateLogic()
+        public override void UpdateLogic(float deltaTime)
         {
             foreach (var pair in _abilityMap)
             {

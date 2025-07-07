@@ -13,11 +13,13 @@ namespace AbilityModule
         [SerializeField]
         private Stat _duration;
 
-        [SerializeField, SerializedDictionary("Normalized time", "Consequence")]
+        [SerializeField, SerializedDictionary("Normalized time (0-1)", "Consequence")]
         private SerializedDictionary<float, List<Consequence>> _consequenceTimeline = new SerializedDictionary<float, List<Consequence>>();
         
         public async UniTask Execute(AbilityContext context)
         {
+            Debug.Log($"[AbilityPhase] Start phase {name}");
+
             float duration = _duration.Value;
             float elapsed = 0f;
 
