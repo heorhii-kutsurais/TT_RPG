@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab41d571ee300a41bf1d8485afea5bb, type: 3}
   m_Name: CircularSlash_SphereOverlap
   m_EditorClassIdentifier: 
+  _testVisualZone: {fileID: 1989472919357191431, guid: cd3126bc412a7a94c9894a0c5ed720cd, type: 3}
   _radius: {fileID: 11400000, guid: 14116041b5eb1c4479cf1038d6aed027, type: 2}
   _consequences:
   - {fileID: 11400000, guid: eb434b3ee7faf5b4498896796ffb9e19, type: 2}

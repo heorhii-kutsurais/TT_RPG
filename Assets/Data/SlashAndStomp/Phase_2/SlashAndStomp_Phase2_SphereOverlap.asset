@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab41d571ee300a41bf1d8485afea5bb, type: 3}
   m_Name: SlashAndStomp_Phase2_SphereOverlap
   m_EditorClassIdentifier: 
+  _testVisualZone: {fileID: 1989472919357191431, guid: cd3126bc412a7a94c9894a0c5ed720cd, type: 3}
   _radius: {fileID: 11400000, guid: 9063225ebf0beb445a15d134bf3cf0a0, type: 2}
   _consequences:
   - {fileID: 11400000, guid: a76bc35cc91302148b0d300417e767d2, type: 2}

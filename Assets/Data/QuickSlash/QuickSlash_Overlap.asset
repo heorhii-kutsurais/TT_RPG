@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3facc35cc0600ed42a186f441ecfc8e0, type: 3}
   m_Name: QuickSlash_Overlap
   m_EditorClassIdentifier: 
+  _testVisualZone: {fileID: 7509371422289569970, guid: 74d6b78a9cc6df349b36f554f7c9f491, type: 3}
   _width: {fileID: 11400000, guid: 1fab5a50fa8c6444a90d298576e5e29d, type: 2}
   _height: {fileID: 11400000, guid: 8fac4b0cb593a654185b738c6d23e599, type: 2}
   _length: {fileID: 11400000, guid: 6b1071efb54bf804caf54290292aa8af, type: 2}
