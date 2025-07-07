@@ -1,5 +1,7 @@
 # Ability System Tech Test
 
+The project is located on the **`develop` branch**.
+
 ## How to Run
 1. Open the scene located at `Assets/Scenes/AbilitySystemTest.unity`.
 2. Press Play — the scene includes a controllable character with 5 abilities:
