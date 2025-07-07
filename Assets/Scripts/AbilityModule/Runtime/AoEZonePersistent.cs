@@ -104,19 +104,18 @@ namespace AbilityModule.Runtime
         {
             foreach (var entity in currentEntities)
             {
-                if (_trackedEntities.Add(entity))
+                var context = new AbilityContext
                 {
-                    var ctx = new AbilityContext
-                    {
-                        Caster = _caster,
-                        CurrentTarget = entity
-                    };
+                    Caster = _caster,
+                    CurrentTarget = entity
+                };
 
-                    foreach (var consequence in _onEnterConsequences)
-                    {
-                        consequence.Execute(ctx);
-                    }
+                foreach (var consequence in _onEnterConsequences)
+                {
+                    consequence.Execute(context);
                 }
+
+                _trackedEntities.Add(entity);
             }
         }
 
@@ -135,6 +134,7 @@ namespace AbilityModule.Runtime
                 {
                     if (consequence is StatusConsequence statusConsequence)
                     {
+                        Debug.Log("Worked");
                         entity.RemoveStatus(statusConsequence.Guid);
                     }
                     else
@@ -151,9 +151,9 @@ namespace AbilityModule.Runtime
                 toRemove.Add(entity);
             }
 
-            foreach (var entity in toRemove)
+            foreach (var item in toRemove)
             {
-                _trackedEntities.Remove(entity);
+                _trackedEntities.Remove(item);
             }
         }
     }

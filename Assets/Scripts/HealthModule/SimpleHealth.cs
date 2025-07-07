@@ -41,17 +41,23 @@ namespace HealthModule
             {
                 return;
             }
-
-            _simpleHealthBar.Activate();
-
             if (amount < 0)
             {
                 Debug.LogError("Negative heal");
                 amount = Mathf.Abs(amount);
             }
 
-
             _current += amount;
+
+            if (_current >= _max)
+            {
+                _simpleHealthBar.Deactivate();
+            }
+            else
+            {
+                _simpleHealthBar.Activate();
+            }
+
             UpdateHealth(_current, _max);
         }
 

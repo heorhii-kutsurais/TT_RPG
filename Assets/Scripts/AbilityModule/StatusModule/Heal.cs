@@ -7,7 +7,7 @@ namespace AbilityModule.StatusModule
         public Heal(string guid, float tickInterval, float healPerTick)
         {
             _guid = guid;
-            _duration = 0f;
+            _duration = tickInterval;
             _tickInterval = tickInterval;
             _healPerTick = healPerTick;
         }

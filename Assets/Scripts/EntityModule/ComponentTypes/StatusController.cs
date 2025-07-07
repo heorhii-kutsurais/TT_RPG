@@ -26,6 +26,7 @@ namespace EntityModule.ComponentTypes
             }
             else
             {
+                status.OnEnd -= RemoveStatus;
                 status.OnEnd += RemoveStatus;
                 status.OnApply(_entity);
                 _activeStatuses.Add(guid, status);

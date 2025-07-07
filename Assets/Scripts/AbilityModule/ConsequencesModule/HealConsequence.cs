@@ -17,6 +17,11 @@ namespace AbilityModule.Consequences
             var target = context.CurrentTarget;
             if (target == null)
             {
+                Debug.LogError("Target is null");
+                return;
+            }
+            if (target.Alignment != context.Caster.Alignment)
+            {
                 return;
             }
 

@@ -16,9 +16,12 @@ namespace AbilityModule.Consequences
                 Debug.LogError("Target is null");
                 return;
             }
+            if (target.Alignment == context.Caster.Alignment)
+            {
+                return;
+            }
 
             var damage = _damage.Value;
-
             target.TakeDamage(damage);
         }
     }
